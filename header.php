@@ -7,4 +7,23 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header class="header">0000</header>
+    <header class="header">
+        <div class="container container-header">
+            
+            <div class="header__logo"></div>
+    
+            <button class="header__burger" id="burger">
+                <span></span>
+            </button>
+
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list "  id="navList">
+                    <li><a class="nav__item" href="#">Home</a></li>
+                    <li><a class="nav__item" href="#">Projects</a></li>
+                    <li><a class="nav__item" href="#">Experience</a></li>
+                    <li><a class="nav__item" href="#">Contact</a></li>
+                </ul>
+            </nav>    
+           
+        </div>
+    </header>
