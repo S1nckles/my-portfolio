@@ -14,6 +14,16 @@
                         <button class="btn"> Download CV </button>
                     </div>
                 </section>
+                <section class="main__skills">
+                    <h1 class="main__skills__title">EXPERIENCE WITH</h1>
+                    <div class="main__skills-list">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/javascript.png" alt="JavaScript">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/nodejs.png" alt="NextJS">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/html.png" alt="HTML">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/css.png" alt="CSS">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/reactjs.png" alt="React">
+                    </div>
+                </section>
             </div>
         </div>
     </main>
