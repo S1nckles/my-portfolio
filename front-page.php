@@ -14,14 +14,29 @@
                         <button class="btn"> Download CV </button>
                     </div>
                 </section>
-                <section class="main__skills">
-                    <h1 class="main__skills__title">EXPERIENCE WITH</h1>
-                    <div class="main__skills-list">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/javascript.png" alt="JavaScript">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/nodejs.png" alt="NextJS">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/html.png" alt="HTML">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/css.png" alt="CSS">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/reactjs.png" alt="React">
+                <section class="main__projects">
+                    <h2 class="projects__title">Projects</h2>
+                    <div class="projects__items">
+                        <div class="projects__item">
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/projects/01.jpg" alt="Project 1"></a>                            
+                            <div class="item__content">
+                                <div class="item__content__text">
+                                    <a href="#" class="item__content__discription">CLICK HERE TO VISIT</a>
+                                    <h3 class="item__content__title">HTML TUTORIAL</h3>
+                                </div>
+                                <a href="#" class="item__content__link"><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/arrow-icon.svg" alt="Link"></a>
+                            </div>
+                        </div>
+                        <div class="projects__item">
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/projects/02.jpg" alt="Project 2"></a>                            
+                            <div class="item__content">
+                                <div class="item__content__text">
+                                    <a href="#" class="item__content__discription">CLICK HERE TO VISIT</a>
+                                    <h3 class="item__content__title">CSS TUTORIAL</h3>
+                                </div>
+                                <a href="#" class="item__content__link"><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/arrow-icon.svg" alt="Link"></a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
