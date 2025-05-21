@@ -257,6 +257,11 @@ body {
     margin-top: 99px;
 }
 
+.main__inner {
+    height: calc(100vh - 82px);
+    margin-top: 99px;
+}
+
 /* Banner Section Styles */
 
 .main__content {
