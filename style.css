@@ -85,6 +85,15 @@ body {
     transition: all 0.3s ease;
 }
 
+.experience__data, .experience__item__text, .contact__content{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #8491A0;
+
+}
+
 /* Header Styles */
 
 .header {
@@ -127,7 +136,7 @@ body {
     gap: 70px;
 }
 .nav__item {
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 15px;
     font-weight: 600;
 }
@@ -523,14 +532,6 @@ body {
     border-radius: 50%;
     background-image: url("http://localhost/portfolio/wp-content/themes/portfolio/assets/images/logos/google-logo.svg");
 }
-.experience__data, .experience__item__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0%;
-    color: #8491A0;
-
-}
 
 @media (max-width: 768px) {
     
@@ -549,4 +550,82 @@ body {
         font-size: 20px;
 
     }
+}
+
+/* Footer Styles */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    margin-top: 107px;
+    padding: 90px 0;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact__title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 2%;
+    color: var(--secondary-color);
+}
+.contact__content {
+    margin-top: 34px;
+    max-width: 676px;
+}
+.contact__mail {
+    margin-top: 22px;
+    position: relative;
+    padding-left: 22px;
+}
+.contact__mail a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 2%;
+    color: var(--secondary-color);
+}
+.contact__mail a:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.contact__mail::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background-image: url("http://localhost/portfolio/wp-content/themes/portfolio/assets/images/icons/mail-Icon.svg");
+}
+.contact__socials {
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.contact__social {
+    max-width: 20px;
+    max-height: 20px;
+    color: var(--primary-color);
+}
+
+.contact__social svg {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__social:hover {
+    transition: color 0.3s ease;
+    color: var(--secondary-color);
 }
