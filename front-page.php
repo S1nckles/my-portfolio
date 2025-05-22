@@ -2,7 +2,7 @@
     <main class="main">
         <div class="container">
             <div class="main__inner">
-                <section class="main__content">
+                <section class="main__content" id="home">
                     <div class="main__content__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="asd"></div>
                     <h1 class="main__content__title">I do code and <br> make content <span>about it!</span></h1>
                     <p class="main__content__text">I am a seasoned full-stack software engineer with over 
@@ -14,7 +14,7 @@
                         <button class="btn"> Download CV </button>
                     </div>
                 </section>
-                <section class="main__projects">
+                <section class="main__projects" id="projects">
                     <h2 class="projects__title">Projects</h2>
                     <div class="projects__items">
                         <div class="projects__item">
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="experience">
+                <section class="experience" id="experience">
                     <h2 class="experience__title">Experience</h2>
                     <div class="experience__items">
                         <div class="experience__item">

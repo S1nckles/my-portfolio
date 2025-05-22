@@ -18,10 +18,10 @@
 
             <nav class="header__nav" id="nav">
                 <ul class="header__nav-list "  id="navList">
-                    <li><a class="nav__item" href="#">Home</a></li>
-                    <li><a class="nav__item" href="#">Projects</a></li>
-                    <li><a class="nav__item" href="#">Experience</a></li>
-                    <li><a class="nav__item" href="#">Contact</a></li>
+                    <li><a class="nav__item" href="#home">Home</a></li>
+                    <li><a class="nav__item" href="#projects">Projects</a></li>
+                    <li><a class="nav__item" href="#experience">Experience</a></li>
+                    <li><a class="nav__item" href="#footer">Contact</a></li>
                 </ul>
             </nav>    
            
