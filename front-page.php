@@ -14,7 +14,7 @@
                         <button class="btn"> Download CV </button>
                     </div>
                 </section>
-                <section class="main__projects" id="projects">
+                <section class="projects" id="projects">
                     <h2 class="projects__title">Projects</h2>
                     <div class="projects__items">
                         <div class="projects__item">
