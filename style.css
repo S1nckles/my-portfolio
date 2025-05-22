@@ -139,13 +139,18 @@ body {
     align-items: center;
     list-style: none;
     gap: 70px;
+    margin: 0;
+    padding: 0;
 }
-.nav__item {
+
+.header__nav-list li a {
     color: var(--primary-color);
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
 }
-.nav__item:hover {
+
+.header__nav-list li a:hover {
     color: var(--secondary-color);
     transition: all 0.3s ease;
 }
@@ -396,7 +401,7 @@ body {
 
 /* Projects Section Styles */
 
-.main__projects {
+.projects {
     margin-top: 99px;
     display: flex;
     flex-direction: column;
