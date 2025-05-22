@@ -455,3 +455,97 @@ body {
 .item__content__link img {
     border-radius: 0;
 }
+
+/* Experience Section Style */
+
+.experience {
+    margin-top: 99px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 57px;
+    max-width: 800px;
+}
+
+.experience__title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35.7px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    background: var(--experience-title-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.experience__items {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+.experience__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+
+    width: 100%;
+}
+.experience__item__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience__item__title {
+    padding-left: 45px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.experience__item__title::before {
+    content: '';
+    display : block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: url("http://localhost/portfolio/wp-content/themes/portfolio/assets/images/logos/google-logo.svg");
+}
+.experience__data, .experience__item__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #8491A0;
+
+}
+
+@media (max-width: 768px) {
+    
+    .experience__item__header {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .experience__item__title {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .experience__item__title {
+        font-size: 20px;
+
+    }
+}

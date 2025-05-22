@@ -39,6 +39,32 @@
                         </div>
                     </div>
                 </section>
+                <section class="experience">
+                    <h2 class="experience__title">Experience</h2>
+                    <div class="experience__items">
+                        <div class="experience__item">
+                            <div class="experience__item__header">
+                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
+                                <span class="experience__data">Nov 2019 - Present</span>
+                            </div>
+                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item__header">
+                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
+                                <span class="experience__data">Nov 2019 - Present</span>
+                            </div>
+                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+                        </div>
+                        <div class="experience__item">
+                            <div class="experience__item__header">
+                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
+                                <span class="experience__data">Nov 2019 - Present</span>
+                            </div>
+                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
