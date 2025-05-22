@@ -253,12 +253,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 82px);
+    min-height: calc(100vh - 82px); 
     margin-top: 99px;
+    flex-direction: column; 
 }
 
 .main__inner {
-    height: calc(100vh - 82px);
+    min-height: calc(100vh - 82px);
     margin-top: 99px;
 }
 
