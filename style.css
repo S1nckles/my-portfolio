@@ -432,15 +432,31 @@ body {
     flex-direction: column;
     align-items: center;
 
-    max-width: 390px;
-    max-height: 301px;
+    width: 390px;
+    height: 301px;
     border-radius: 20px;
     background-color: #222222;
 }
 .projects__item img {
-    max-width: 100%;
+    width: 100%;
     max-height: 235px;
     border-radius: 20px 20px 0 0;
+
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+.item__NotAImage {
+    width: 390px;
+    height: 235px;
+    border-radius: 20px 20px 0 0;
+}
+.item__NotAImage img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
 }
 .item__content {
     display: flex;
@@ -479,7 +495,7 @@ body {
 /* Experience Section Style */
 
 .experience {
-    margin-top: 99px;
+    margin: 99px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
