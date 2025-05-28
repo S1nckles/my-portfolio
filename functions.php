@@ -40,3 +40,25 @@ function register_projects_post_type() {
 }
 
 add_action('init', 'register_projects_post_type');
+
+
+// Add Experience Post Type
+function register_experience_post_type() {
+    register_post_type('experience', [
+        'labels' => [
+            'name' => 'Experiences',
+            'singular_name' => 'Experience Entry',
+            'add_new' => 'Add Experience',
+            'add_new_item' => 'Add New Experience',
+            'edit_item' => 'Edit Experience',
+            'new_item' => 'New Experience',
+            'view_item' => 'View Experience',
+        ],
+        'public' => true,
+        'has_archive' => false,
+        'menu_icon' => 'dashicons-id-alt',
+        'supports' => ['title', 'editor', 'custom-fields'],
+        'show_in_rest' => true,
+    ]);
+}
+add_action('init', 'register_experience_post_type');
