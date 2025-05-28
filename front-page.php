@@ -17,11 +17,11 @@
                 <section class="skills" id="skills">
                     <h2 class="skills__title">EXPERIENCE WITH</h2>
                     <div class="skills__list">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/html.png" alt="HTML">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/css.png" alt="CSS">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/javascript.png" alt="JavaScript">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/reactjs.png" alt="ReactJS">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/logos/nodejs.png" alt="NextJS">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/html.png" alt="HTML">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/css.png" alt="CSS">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/javascript.png" alt="JavaScript">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/reactjs.png" alt="ReactJS">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/nodejs.png" alt="NextJS">
                     </div>
                 </section>
                 <section class="projects" id="projects">
@@ -60,31 +60,39 @@
                 <section class="experience" id="experience">
                     <h2 class="experience__title">Experience</h2>
                     <div class="experience__items">
-                        <div class="experience__item">
-                            <div class="experience__item__header">
-                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
-                                <span class="experience__data">Nov 2019 - Present</span>
+                    <?php
+                        $experiences = new WP_Query([
+                            'post_type' => 'experience',
+                            'posts_per_page' => -1,
+                            'orderby' => 'date',
+                            'order' => 'DESC'
+                        ]);
+
+                        if ($experiences->have_posts()):
+                            while ($experiences->have_posts()): $experiences->the_post(); 
+                            
+                            $start_date = get_post_meta(get_the_ID(), 'start_date', true);
+                            $end_date = get_post_meta(get_the_ID(), 'end_date', true);?>
+
+                            <div class="experience__item">
+                                <div class="experience__item__header">
+                                    <h3 class="experience__item__title"> <?php the_title(); ?> </h3>
+                                    <span class="experience__data"><?php if ($start_date && $end_date) {
+                                            echo $start_date . ' — ' . $end_date ;
+                                        } elseif ($end_date) {
+                                            echo $end_date;
+                                        }?>
+                                    </span>
+                                </div>
+                                <?php the_content(); ?>
                             </div>
-                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item__header">
-                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
-                                <span class="experience__data">Nov 2019 - Present</span>
-                            </div>
-                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
-                        </div>
-                        <div class="experience__item">
-                            <div class="experience__item__header">
-                                <h3 class="experience__item__title experience__item__title-google">Lead Software Engineer at Google</h3>
-                                <span class="experience__data">Nov 2019 - Present</span>
-                            </div>
-                            <p class="experience__item__text">As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.</p>
-                        </div>
-                    </div>
+                            <?php endwhile;
+                            wp_reset_postdata();
+                        endif;
+                    ?>
+                </div>
                 </section>
             </div>
-            
         </div>
     </main>
 <?php get_footer();?>
