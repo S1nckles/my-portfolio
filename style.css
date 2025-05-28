@@ -532,6 +532,14 @@ body {
 
     width: 100%;
 }
+.experience__item__text a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.experience__item__text a:hover {
+    text-decoration: underline;
+}
+
 .experience__item__header {
     width: 100%;
     display: flex;
@@ -556,7 +564,10 @@ body {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background-image: url("http://localhost/portfolio/wp-content/themes/portfolio/assets/images/logos/google-logo.svg");
+    background: url("http://localhost/portfolio/wp-content/themes/portfolio/assets/images/circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 768px) {
