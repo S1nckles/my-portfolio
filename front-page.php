@@ -3,15 +3,12 @@
         <div class="container">
             <div class="main__inner">
                 <section class="main__content" id="home">
-                    <div class="main__content__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar.png" alt="asd"></div>
-                    <h1 class="main__content__title">I do code and <br> make content <span>about it!</span></h1>
-                    <p class="main__content__text">I am a seasoned full-stack software engineer with over 
-                        8 years of professional experience, specializing in backend development. 
-                        My expertise lies in crafting robust and scalable SaaS-based 
-                        architectures on the Amazon AWS platform.</p>
+                    <div class="main__content__logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Avatar.png" alt="Avatar"></div>
+                    <h1 class="main__content__title">I do code and <br> bring <span>designs to life!</span></h1>
+                    <p class="main__content__text">I’m a front-end developer focused on crafting responsive, fast, and accessible websites. I specialize in building clean layouts from Figma, PSD, or Sketch using HTML, CSS, JavaScript, and WordPress. Whether it’s a landing page or a modern web app, I make sure it looks great and works everywhere.</p>
                     <div class="main__content__action">
-                        <button class="btn btn-active"> Get In Touch </button>
-                        <button class="btn"> Download CV </button>
+                        <a href="#footer"><button class="btn btn-active"> Get In Touch </button></a>
+                        <a href="<?php echo get_template_directory_uri(); ?>/assets/ContactMe.pdf" download ><button class="btn"> Download CV </button></a>
                     </div>
                 </section>
                 <section class="skills" id="skills">
