@@ -10,7 +10,7 @@
     <header class="header">
         <div class="container container-header">
             
-            <div class="header__logo"></div>
+            <div class="header__logo">IL</div>
     
             <button class="header__burger" id="burger">
                 <span></span>
