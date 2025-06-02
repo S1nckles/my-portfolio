@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *{
 	padding: 0;
@@ -121,13 +122,20 @@ body {
 }
 
 .header__logo {
-    content: '';
+    width: 80px;
+    height: 80px;
+    color: var(--primary-color);
 
-    display: block;
-    width: 50px;
-    height: 50px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background-color: gray;
+    text-transform: uppercase;
 }
 .header__nav {
     display: flex;
@@ -297,6 +305,14 @@ body {
     max-height: 213px;
     border-radius: 50%;
     background: var(--general-title-color);
+}
+.main__content__logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
 }
 .main__content__title {
     max-width: 670px;
