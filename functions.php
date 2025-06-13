@@ -34,7 +34,7 @@ function register_projects_post_type() {
         'public' => true,
         'has_archive' => false,
         'rewrite' => ['slug' => 'projects'],
-        'supports' => ['title', 'editor', 'thumbnail'],
+        'supports' => ['title', 'editor', 'thumbnail', 'custom-fields'],
         'menu_icon' => 'dashicons-portfolio'
     ]);
 }

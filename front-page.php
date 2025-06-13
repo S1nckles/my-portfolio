@@ -32,20 +32,23 @@
 
                             if ($projects->have_posts()) :
                             while ($projects->have_posts()) : $projects->the_post(); ?>
+                                <?php $github = get_post_meta(get_the_ID(), 'github_link', true); ?>
                                 <div class="projects__item">
-                                    <a href="<?php the_permalink(); ?>">
+                                    <a href="<?php echo esc_url($github); ?>" target="_blank">
                                         <?php if (has_post_thumbnail()) {
-                                            the_post_thumbnail('full'); // або 'full', 'large'
+                                            the_post_thumbnail('full');
                                         } else {
                                             echo '<div class="item__NotAImage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/800px-Image_not_available.png" alt="Not Image" ></div>';
                                         } ?>
                                     </a>
                                     <div class="item__content">
                                         <div class="item__content__text">
-                                            <a href="<?php the_permalink(); ?>" class="item__content__discription">CLICK HERE TO VISIT</a>
+                                            <a href="<?php echo esc_url($github); ?>" target="_blank" class="item__content__discription">CLICK HERE TO VISIT</a>
                                             <h3 class="item__content__title"><?php the_title(); ?></h3>
                                         </div>
-                                        <a href="<?php the_permalink(); ?>" class="item__content__link"><img src="<?php echo get_template_directory_uri();?>/assets/images/icons/arrow-icon.svg" alt="Link"></a>
+                                        <a href="<?php echo esc_url($github); ?>" target="_blank" class="item__content__link">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow-icon.svg" alt="Link">
+                                        </a>
                                     </div>
                                 </div>
                             <?php endwhile;
