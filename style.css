@@ -411,8 +411,8 @@ body {
 }
 
 .skills__list img {
-    max-width: 50px;
-    max-height: 42px;
+    height: 42px;
+    width: 43px;
 }
 
 /* Projects Section Styles */

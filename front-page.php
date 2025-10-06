@@ -19,6 +19,7 @@
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/javascript.png" alt="JavaScript">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/reactjs.png" alt="ReactJS">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/nodejs.png" alt="NextJS">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/skills/wordpress.png" alt="WordPress">
                     </div>
                 </section>
                 <section class="projects" id="projects">
